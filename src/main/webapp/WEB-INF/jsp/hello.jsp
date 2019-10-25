@@ -149,23 +149,17 @@
 
   <c:forEach items="${users}" var="user">
     <tr>
-      <td>${user.name}</td>
-      <td>${user.id}</td>
-      <td>${user.id}</td>
-      <td>${user.id}</td>
-      <td>${user.id}</td>
+      <td class="tablevalue"><div align="center">${user.id}</div></td>
+      <td width="110" class="tablevalue"><div align="center">${user.name}</div></td>
+      <td width="165" class="tablevalue"><div align="center">${user.age}</div></td>
+      <td width="110" class="tablevalue"><div align="center">${user.age}</div></td>
+      <td width="165" class="tablevalue"><div align="center">${user.age}</div></td>
+      <td width="110" class="tablevalue"><div align="center">${user.age}</div></td>
+      <td width="164" class="tablevalue"><div align="center">${user.age}</div></td>
     </tr>
   </c:forEach>
 
-  <tr>
-    <td class="tablevalue"><div align="center">${CIT_File_LOW1}</div></td>
-    <td width="110" class="tablevalue"><div align="center">${CIT_Branches_ratio_LOW1}</div></td>
-    <td width="165" class="tablevalue"><div align="center">${CIT_Branches_des_LOW1}</div></td>
-    <td width="110" class="tablevalue"><div align="center">${CIT_Lines_ratio_LOW1}</div></td>
-    <td width="165" class="tablevalue"><div align="center">${CIT_Lines_des_LOW1}</div></td>
-    <td width="110" class="tablevalue"><div align="center">${CIT_Instructions_ratio_LOW1}</div></td>
-    <td width="164" class="tablevalue"><div align="center">${CIT_Instructions_des_LOW1}</div></td>
-  </tr>
+
 
   <tr bgcolor="#009933">
     <td height="32" colspan="7"><div align="center" class="STYLE7"><strong>高覆盖Top5</strong></div></td>
