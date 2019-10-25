@@ -21,7 +21,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import java.util.Date;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 @Controller
@@ -32,9 +33,16 @@ public class WelcomeController {
 
 	@GetMapping("/")
 	public String welcome(Map<String, Object> model) {
-		model.put("time", new Date());
-		model.put("message", this.message);
-		return "welcome";
+		//model.put("time", new Date());
+		//model.put("message", this.message);
+		User user = new User("111","luban",2);
+		User user2 = new User("222","luban2",4);
+		List<User> users = new ArrayList<>();
+		users.add(user);
+		users.add(user2);
+		model.put("users", users);
+		model.put("CIT_Branches_exec", this.message);
+		return "hello";
 	}
 
 	@RequestMapping("/foo")
