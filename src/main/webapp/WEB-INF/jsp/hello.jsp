@@ -146,13 +146,17 @@
     <td colspan="2" bgcolor="#FF0000" class="STYLE7"><div align="center">Lines</div></td>
     <td colspan="2" bgcolor="#FF0000" class="STYLE7"><div align="center">Instructions</div></td>
   </tr>
+
   <c:forEach items="${users}" var="user">
     <tr>
-      <td>{user.id}</td>
-      <td>{user.name}</td>
-      <td>{user.age}</td>
+      <td>${user.name}</td>
+      <td>${user.id}</td>
+      <td>${user.id}</td>
+      <td>${user.id}</td>
+      <td>${user.id}</td>
     </tr>
   </c:forEach>
+
   <tr>
     <td class="tablevalue"><div align="center">${CIT_File_LOW1}</div></td>
     <td width="110" class="tablevalue"><div align="center">${CIT_Branches_ratio_LOW1}</div></td>
